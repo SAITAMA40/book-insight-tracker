@@ -3,9 +3,14 @@ const nextConfig = {
   webpack: (config, { isServer }) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      "@": __dirname,
+      "@": path.join(__dirname),
+      "@/components": path.join(__dirname, "components"),
+      "@/app": path.join(__dirname, "app"),
     }
     return config
+  },
+  experimental: {
+    serverActions: true,
   },
 }
 

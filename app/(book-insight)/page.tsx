@@ -1,5 +1,5 @@
-"use client"
+import { BookInsightTracker } from "@/components/book-insight-tracker"
 
 export default function BookInsightPage() {
-  return null
+  return <BookInsightTracker />
 }
