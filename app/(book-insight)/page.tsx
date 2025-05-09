@@ -1,5 +1,5 @@
-import { BookInsightClient } from "@/components/book-insight-client"
+import BookInsightServer from "./components/book-insight-server"
 
 export default function BookInsightPage() {
-  return <BookInsightClient />
+  return <BookInsightServer />
 }
